@@ -599,6 +599,10 @@ function OrionLib:MakeWindow(WindowConfig)
 		Font = Enum.Font.GothamBlack,
 		TextSize = 20
 	}), "Text")
+	local PistolaBollaLogo = SetProps(MakeElement("Image", "rbxassetid://17806684890"), {
+		Size = UDim2.new(0, 20, 0, 20),
+		Position = UDim2.new(0, 25, 0, 15)
+	})
 
 	local WindowTopBarLine = AddThemeObject(SetProps(MakeElement("Frame"), {
 		Size = UDim2.new(1, 0, 0, 1),
