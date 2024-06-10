@@ -207,7 +207,7 @@ end
 
 function PizdaMata()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
-local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB <stroke color="#AD00FF" joins="miter" thickness="2" transparency="0.25">NEO</stroke>", HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroIcon = "rbxassetid://17806684890", IntroText = "PistolaBollaHUB", Icon = "rbxassetid://17806684890"})
+local Window = OrionLib:MakeWindow({HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroIcon = "rbxassetid://17806684890", IntroText = "PistolaBollaHUB", Icon = "rbxassetid://17806684890"})
 local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
 
 
