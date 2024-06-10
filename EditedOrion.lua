@@ -509,10 +509,15 @@ function OrionLib:MakeWindow(WindowConfig)
 		BackgroundTransparency = 1
 	}), {
 		AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://7072725342"), {
-			Position = UDim2.new(0, 9, 0, 6),
+			Position = UDim2.new(0, 90, 0, 60),
 			Size = UDim2.new(0, 18, 0, 18)
 		}), "Text")
 	})
+	
+	local PistolaBollaLogo = AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://17806684890"), {
+		Position = UDim2.new(0, 90, 0, 60),
+		Size = UDim2.new(0, 18, 0, 18)
+	}), "Text")
 
 	local MinimizeBtn = SetChildren(SetProps(MakeElement("Button"), {
 		Size = UDim2.new(0.5, 0, 1, 0),
