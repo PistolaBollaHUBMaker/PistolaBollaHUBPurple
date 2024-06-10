@@ -169,7 +169,7 @@ function anchor()
 end
 wait(1)
 local Player = game.Players.LocalPlayer
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?token=GHSAT0AAAAAACTNG3YIX7YU6BUGUPMJGELUZTGNQ6Q')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 Notification.Notify("Loggato!", "Loggato come "..Player.Name.." con successo.", "rbxassetid://4483345998", {
@@ -206,7 +206,7 @@ Notification.Notify("Link Copiato!", "Il link e' stato copiato con successo.", "
 end
 
 function PizdaMata()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?token=GHSAT0AAAAAACTNG3YIX7YU6BUGUPMJGELUZTGNQ6Q')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB -BETA-", HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroIcon = "rbxassetid://13813331976", IntroText = "PistolaBollaHUB"})
 local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
 
@@ -267,7 +267,7 @@ Notification.Notify("ID Copiato!", "L'ID e' stato copiato con successo.", "rbxas
 end
 
 function PistolaBollaBrook()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?token=GHSAT0AAAAAACTNG3YIX7YU6BUGUPMJGELUZTGNQ6Q')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB (Brookhaven)", HidePremium = false, SaveConfig = false, IntroEnabled = false})
 local ColorePelle = Window:MakeTab({
  Name = "Avatar",
@@ -551,7 +551,7 @@ Ritorna:AddButton({
 end
 
 function PistolaBollaVisualizer()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?token=GHSAT0AAAAAACTNG3YIX7YU6BUGUPMJGELUZTGNQ6Q')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB Visualizer", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 _G.id = value
@@ -882,7 +882,7 @@ Ritorna:AddButton({
 end
 
 function PistolaTap()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?token=GHSAT0AAAAAACTNG3YIX7YU6BUGUPMJGELUZTGNQ6Q')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB (Tapping Simulator)", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 _G.AutoClickTap = true
@@ -970,7 +970,7 @@ TornaB:AddButton({
 end
 
 function RainbowFriends()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?token=GHSAT0AAAAAACTNG3YIX7YU6BUGUPMJGELUZTGNQ6Q')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB (Rainbow Friends)", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 _G.FakeBox = true
@@ -1041,7 +1041,7 @@ Tornahub:AddButton({
 end
 
 function fnf()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?token=GHSAT0AAAAAACTNG3YIX7YU6BUGUPMJGELUZTGNQ6Q')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB (Basically FNF: Remix)", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 VirtualInputManager = game:GetService("VirtualInputManager")
@@ -1131,7 +1131,7 @@ function speed()
 
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 10000
 
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?token=GHSAT0AAAAAACTNG3YIX7YU6BUGUPMJGELUZTGNQ6Q')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB (Legends Of Speed)", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 _G.OrbRossi = true
@@ -1388,7 +1388,7 @@ end
 -- game:GetService("ReplicatedStorage").RemoteFunction:InvokeServer(1)
 
 function psx()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?token=GHSAT0AAAAAACTNG3YIX7YU6BUGUPMJGELUZTGNQ6Q')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB (Pet Simulator X)", HidePremium = false, SaveConfig = true, IntroEnabled = false})
 
 _G.AutoRegali = true
