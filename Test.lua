@@ -99,7 +99,7 @@ diocane:AddTextbox({
 	end
 })
 diocane:AddButton({
-	Name = "Conferma nome",
+	Name = "Conferma Cookie",
 	Callback = function()
 		Nome()
 	end
