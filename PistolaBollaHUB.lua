@@ -207,7 +207,7 @@ end
 
 function PizdaMata()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
-local Window = OrionLib:MakeWindow({HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroIcon = "rbxassetid://17806684890", IntroText = "PistolaBollaHUB"})
+local Window = OrionLib:MakeWindow({HidePremium = false, SaveConfig = true, IntroEnabled = true, IntroIcon = "rbxassetid://17821788025", IntroText = "PistolaBollaHUB"})
 local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
 
 
@@ -268,7 +268,7 @@ end
 
 function PistolaBollaBrook()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
-local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB (Brookhaven)", HidePremium = false, SaveConfig = false, IntroEnabled = false})
+local Window = OrionLib:MakeWindow({Name = string.format("PistolaBollaHUB - <font color="#AD00FF">Brookhaven</font> -"), HidePremium = false, SaveConfig = false, IntroEnabled = false})
 local ColorePelle = Window:MakeTab({
  Name = "Avatar",
  Icon = "rbxassetid://12392896519",
@@ -455,66 +455,6 @@ local Macchina = Window:MakeTab({
  Name = "Macchina",
  Icon = "rbxassetid://13631802498",
  PremiumOnly = false
-})
-Macchina:AddButton({
- Name = "Macchina Rossa",
- Callback = function()
-    game:GetService("ReplicatedStorage").JK.TR["1Player1sCa1r"]:FireServer("PickingCarColor",Color3.new(1, 0, 0))
-end
-})
-Macchina:AddButton({
- Name = "Macchina Arancione",
- Callback = function()
-    game:GetService("ReplicatedStorage").JK.TR["1Player1sCa1r"]:FireServer("PickingCarColor",Color3.new(1, 0, 0.154196))
-end
-})
-Macchina:AddButton({
- Name = "Macchina Gialla",
- Callback = function()
-    local args = {
-    [1] = "PickingCarColor",
-    [2] = Color3.fromRGB(255, 242, 11)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("NN2"):WaitForChild("2NN2Player2NN2sCa2NN2r"):FireServer(unpack(args))
-end
-})
-Macchina:AddButton({
- Name = "Macchina Verde",
- Callback = function()
-    game:GetService("ReplicatedStorage").JK.TR["1Player1sCa1r"]:FireServer("PickingCarColor",Color3.new(0.761252, 0.743564, 0))
-end
-})
-Macchina:AddButton({
- Name = "Macchina Azzurra",
- Callback = function()
-    game:GetService("ReplicatedStorage").JK.TR["1Player1sCa1r"]:FireServer("PickingCarColor",Color3.new(0.00241068, 0.541505, 0.761252))
-end
-})
-Macchina:AddButton({
- Name = "Macchina Blu",
- Callback = function()
-    game:GetService("ReplicatedStorage").JK.TR["1Player1sCa1r"]:FireServer("PickingCarColor",Color3.new(0, 0.172659, 0.761252))
-end
-})
-Macchina:AddButton({
- Name = "Macchina Magenta",
- Callback = function()
-    local args = {
-    [1] = "PickingCarColor",
-    [2] = Color3.fromRGB(196, 0, 255)
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("NN2"):WaitForChild("2NN2Player2NN2sCa2NN2r"):FireServer(unpack(args))
-end
-})
-Macchina:AddToggle({
- Name = "Macchina Arcobaleno(Rischio kick, provero' a sistemare)",
- Default = false,
- Callback = function(Value)
-    _G.MacchinaLGBT = Value
-    MacchinaLGBT()
-end
 })
 
 _G.IdMacchina = "string"
