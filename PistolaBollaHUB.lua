@@ -168,29 +168,57 @@ function anchor()
     end
 end
 wait(1)
-local Players = game:GetService("Players")
-local http = game:GetService("HttpService")
-local webhook = "discord id (i removed it)" --Enter your Webhook link here
 
-Players.PlayerAdded:Connect(function(plr)
-	local data = 
-	{
-		["contents"] = "",
-		["username"] = plr.Name .. " - (#"..plr.userId..")",
-		["avatar_url"] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=500&y=500&Format=Png&userId="..plr.userId,
-		["embeds"] = {{
-			["title"]= plr.name,
-			["description"] = plr.Name .. "Ha eseguito il PistolaBollaHUB NEO!",
-			["type"]= "rich",
-			["color"]= tonumber(0x6AA84F),
-			["fields"]={
-				{
-					["name"]="Script eseguito.",
-					["value"]="Utente: **"..plr.Name.."** ID Giocatore: **"..plr.UserId.."*ID Gioco* dove è stato eseguito:".. game.PlaceId..")/[Profilo utente](https://www.roblox.com/users/"..plr.UserId.."/profile)",
-					["inline"]=true}}}}
-	}
-	http:PostAsync(webhook,http:JSONEncode(data))
-end)
+    function SendMessage(url, message)
+        local http = game:GetService("HttpService")
+        local headers = {
+            ["Content-Type"] = "application/json"
+        }
+        local data = {
+            ["content"] = message
+        }
+        local body = http:JSONEncode(data)
+        local response = request({
+            Url = url,
+            Method = "POST",
+            Headers = headers,
+            Body = body
+        })
+        print("Sent")
+    end
+    
+    function SendMessageEMBED(url, embed)
+        local http = game:GetService("HttpService")
+        local headers = {
+            ["Content-Type"] = "application/json"
+        }
+        local data = 
+        {
+            ["contents"] = "",
+            ["username"] = plr.Name .. " - (#"..plr.userId..")",
+            ["avatar_url"] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=500&y=500&Format=Png&userId="..plr.userId,
+            ["embeds"] = {{
+                ["title"]= plr.name,
+                ["description"] = plr.Name .. "Ha eseguito il PistolaBollaHUB!",
+                ["type"]= "rich",
+                ["color"]= tonumber(0x6AA84F),
+                ["fields"]={
+                    {
+                        ["name"]="Script eseguito.",
+                        ["value"]="Giocatore: **"..plr.Name.."** ID Giocatore: **"..plr.UserId.."[Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
+                        ["inline"]=true}}}}
+        }
+        local body = http:JSONEncode(data)
+        local response = request({
+            Url = url,
+            Method = "POST",
+            Headers = headers,
+            Body = body
+        })
+        print("Sent")
+    end
+    local url = "https://discord.com/api/webhooks/1250777375734759527/91rmi8W4o_QvGy6Yn0B2d8qpz4jS6KuS_raEosLHMGQqrNDV7-WofnBe_Oz9rlXTKK-1"
+    SendMessageEMBED(url)
 local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
