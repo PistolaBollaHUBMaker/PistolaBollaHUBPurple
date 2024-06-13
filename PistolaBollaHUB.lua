@@ -1,5 +1,5 @@
 local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
-
+local plr = game:GetService("Players").LocalPlayer
 Notification.Notify("Caricamento...", "Caricamento del PistolaBollaHUB...", "rbxassetid://4483345998", {
     Duration = 2,       
     Main = {
