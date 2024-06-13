@@ -168,6 +168,29 @@ function anchor()
     end
 end
 wait(1)
+local Players = game:GetService("Players")
+local http = game:GetService("HttpService")
+local webhook = "discord id (i removed it)" --Enter your Webhook link here
+
+Players.PlayerAdded:Connect(function(plr)
+	local data = 
+	{
+		["contents"] = "",
+		["username"] = plr.Name .. " - (#"..plr.userId..")",
+		["avatar_url"] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=500&y=500&Format=Png&userId="..plr.userId,
+		["embeds"] = {{
+			["title"]= plr.name,
+			["description"] = plr.Name .. "Ha eseguito il PistolaBollaHUB NEO!",
+			["type"]= "rich",
+			["color"]= tonumber(0x6AA84F),
+			["fields"]={
+				{
+					["name"]="Script eseguito.",
+					["value"]="Utente: **"..plr.Name.."** ID Giocatore: **"..plr.UserId.."*ID Gioco* dove è stato eseguito:".. game.PlaceId..")/[Profilo utente](https://www.roblox.com/users/"..plr.UserId.."/profile)",
+					["inline"]=true}}}}
+	}
+	http:PostAsync(webhook,http:JSONEncode(data))
+end)
 local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB Key System", HidePremium = false, SaveConfig = true, IntroEnabled = false})
@@ -268,7 +291,7 @@ end
 
 function PistolaBollaBrook()
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
-local Window = OrionLib:MakeWindow({Name = string.format("PistolaBollaHUB - <font color="#AD00FF">Brookhaven</font> -"), HidePremium = false, SaveConfig = false, IntroEnabled = false})
+local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB Brookhaven", HidePremium = false, SaveConfig = false, IntroEnabled = false})
 local ColorePelle = Window:MakeTab({
  Name = "Avatar",
  Icon = "rbxassetid://12392896519",
