@@ -513,11 +513,6 @@ function OrionLib:MakeWindow(WindowConfig)
 			Size = UDim2.new(0, 18, 0, 18)
 		}), "Text")
 	})
-	
-	local PistolaBollaLogo = AddThemeObject(SetProps(MakeElement("Image", "rbxassetid://17806684890"), {
-		Position = UDim2.new(0, 90, 0, 6),
-		Size = UDim2.new(0, 18, 0, 18)
-	}), "Text")
 
 	local MinimizeBtn = SetChildren(SetProps(MakeElement("Button"), {
 		Size = UDim2.new(0.5, 0, 1, 0),
