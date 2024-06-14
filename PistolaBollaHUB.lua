@@ -220,7 +220,7 @@ end
 
 local embed = {
     ["title"] = "Script eseguito!",
-    ["description"] = "Giocatore: **"..plr.Name.."** ID Giocatore: **"..plr.UserId.."[Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
+    ["description"] = "Giocatore: **"..plr.Name.."** **ID Giocatore: **"..plr.UserId.." [Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
     ["color"] = 65280,
     ["fields"] = {},
     ["footer"] = {
