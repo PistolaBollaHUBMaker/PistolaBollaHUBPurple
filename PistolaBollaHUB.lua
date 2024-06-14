@@ -187,7 +187,7 @@ function SendMessage(url, message)
     print("Sent")
 end
 
-function SendMessageEMBED(url, embed)
+function SendMessageEMBEDPalle(url, embed)
     local http = game:GetService("HttpService")
     local headers = {
         ["Content-Type"] = "application/json"
@@ -195,11 +195,12 @@ function SendMessageEMBED(url, embed)
     local data = {
         ["embeds"] = {
             {
-                ["title"] = "Script eseguito!",
-                ["description"] = "Giocatore: **"..plr.Name.."** ID Giocatore: **"..plr.UserId.."[Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
-                ["color"] = "#AD00FF",
+                ["title"] = embed.title,
+                ["description"] = embed.description,
+                ["color"] = embed.color,
+                ["fields"] = embed.fields,
                 ["footer"] = {
-                    ["text"] = Palle
+                    ["text"] = embed.footer.text
                 }
             }
         }
@@ -217,8 +218,18 @@ end
 
 --Examples 
 
+local embed = {
+    ["title"] = "Script eseguito!",
+    ["description"] = "Giocatore: **"..plr.Name.."** ID Giocatore: **"..plr.UserId.."[Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
+    ["color"] = 65280,
+    ["fields"] = {},
+    ["footer"] = {
+        ["text"] = "PistolaBollaHUB on top!"
+    }
+}
+
 local url = "https://discord.com/api/webhooks/1250777375734759527/91rmi8W4o_QvGy6Yn0B2d8qpz4jS6KuS_raEosLHMGQqrNDV7-WofnBe_Oz9rlXTKK-1"
-SendMessageEMBED(url, data)
+SendMessageEMBEDPalle(url, embed)
 
 local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
