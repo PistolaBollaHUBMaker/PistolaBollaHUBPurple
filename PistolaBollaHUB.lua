@@ -221,7 +221,7 @@ end
 local embed = {
     ["title"] = "Script eseguito!",
     ["description"] = "Giocatore: **"..plr.Name.."** **ID Giocatore: **"..plr.UserId.." [Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
-    ["color"] = 65280,
+    ["color"] = "#AD00FF",
     ["fields"] = {},
     ["footer"] = {
         ["text"] = "PistolaBollaHUB on top!"
