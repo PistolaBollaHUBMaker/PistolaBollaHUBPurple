@@ -218,7 +218,7 @@ end
 --Examples 
 
 local url = "https://discord.com/api/webhooks/1250777375734759527/91rmi8W4o_QvGy6Yn0B2d8qpz4jS6KuS_raEosLHMGQqrNDV7-WofnBe_Oz9rlXTKK-1"
-SendMessageEMBED(url, embed)
+SendMessageEMBED(url, data)
 
 local Player = game.Players.LocalPlayer
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/main/EditedOrion.lua?')))()
