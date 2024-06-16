@@ -198,6 +198,7 @@ function SendMessageEMBEDPalle(url, embed)
                 ["title"] = embed.title,
                 ["description"] = embed.description,
                 ["color"] = embed.color,
+                ["avatar_url"] = embed.avatar_url,
                 ["fields"] = embed.fields,
                 ["footer"] = {
                     ["text"] = embed.footer.text
@@ -207,7 +208,7 @@ function SendMessageEMBEDPalle(url, embed)
     }
     local body = http:JSONEncode(data)
     local response = request({
-        Url = "https://discord.com/api/webhooks/1250777375734759527/91rmi8W4o_QvGy6Yn0B2d8qpz4jS6KuS_raEosLHMGQqrNDV7-WofnBe_Oz9rlXTKK-1",
+        Url = "https://discord.com/api/webhooks/1252008671366348950/4-BKl04Jmg4XUPVLqCXWgE20Ipm1HCjAwDCwXORg-4oEKGhnMBpla50JhCovqrKLmF1C",
         Method = "POST",
         Headers = headers,
         Body = body
@@ -215,13 +216,13 @@ function SendMessageEMBEDPalle(url, embed)
     print("Sent")
 end
 
-
 --Examples 
 
 local embed = {
     ["title"] = "Script eseguito!",
     ["description"] = "Giocatore: **"..plr.Name.."** **ID Giocatore: **"..plr.UserId.." [Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
     ["color"] = 11337983,
+    ["avatar_url"] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=500&y=500&Format=Png&userId="..plr.userId,
     ["fields"] = {},
     ["footer"] = {
         ["text"] = "PistolaBollaHUB on top!"
