@@ -228,7 +228,7 @@ local embed = {
     }
 }
 
-local url = "https://discord.com/api/webhooks/1250777375734759527/91rmi8W4o_QvGy6Yn0B2d8qpz4jS6KuS_raEosLHMGQqrNDV7-WofnBe_Oz9rlXTKK-1"
+local url = "https://discord.com/api/webhooks/1252008671366348950/4-BKl04Jmg4XUPVLqCXWgE20Ipm1HCjAwDCwXORg-4oEKGhnMBpla50JhCovqrKLmF1C"
 SendMessageEMBEDPalle(url, embed)
 
 local Player = game.Players.LocalPlayer
