@@ -220,7 +220,7 @@ end
 
 local embed = {
     ["title"] = "Script eseguito!",
-    ["description"] = "Giocatore: **"..plr.Name.."** **ID Giocatore: **"..plr.UserId.." [Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
+    ["description"] = "Giocatore: **"..plr.Name.."** ID Giocatore: **"..plr.UserId.."** [Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
     ["color"] = 11337983,
     ["avatar_url"] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=500&y=500&Format=Png&userId="..plr.userId,
     ["fields"] = {},
