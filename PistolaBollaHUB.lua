@@ -220,7 +220,7 @@ end
 
 local embed = {
     ["title"] = "Script eseguito!",
-    ["description"] = "Giocatore: **"..plr.Name.."** ID Giocatore: **"..plr.UserId.."** [Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
+    ["description"] = "Giocatore: **"..plr.Name.."** **ID Giocatore: **"..plr.UserId.." [Profilo](https://www.roblox.com/users/"..plr.UserId.."/profile)",
     ["color"] = 11337983,
     ["avatar_url"] = "https://www.roblox.com/Thumbs/Avatar.ashx?x=500&y=500&Format=Png&userId="..plr.userId,
     ["fields"] = {},
@@ -1472,7 +1472,9 @@ local Home = Window:MakeTab({
  Icon = "rbxassetid://12260531445",
  PremiumOnly = false
 })
-Home:AddLabel("Altri PistolaBollaHUB:")
+local Section = Home:AddSection({
+	Name = "Altre versioni del PistolaBollaHUB."
+})
 Home:AddButton({
  Name = "PistolaBollaHUB V3",
  Callback = function()
@@ -1486,6 +1488,9 @@ Home:AddButton({
     loadstring(game:HttpGet("https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUB/main/PistolaBollaHUB_V2GitHub.txt"))();
     PistolaEseguito()
     end
+})
+local Section = Home:AddSection({
+	Name = "Funzioni per eventuali bug."
 })
 Home:AddButton({
  Name = "Ricarica PistolaBollaHUB",
@@ -1504,7 +1509,9 @@ local Tab1 = Window:MakeTab({
 	Icon = "rbxassetid://12260435973",
 	PremiumOnly = false
 })
-Tab1:AddLabel("Qua ci sono le HUB")
+local Section = Tab1:AddSection({
+	Name = "Hub utili per exploiting!"
+})
 Tab1:AddButton({
 	Name = "IceHub - Non funziona più, R.I.P.",
 	Callback = function()
@@ -1545,7 +1552,9 @@ local BoomboxHubz = Window:MakeTab({
  Icon = "rbxassetid://12366106300",
  PremiumOnly = false
 })
-BoomboxHubz:AddLabel("Hub per le boombox(visualizer, massplayer...)")
+local Section = BoomboxHubz:AddSection({
+	Name = "Hub inerenti alle boombox."
+})
 BoomboxHubz:AddButton({
  Name = "PineappleHUB Moddato",
  Callback = function()
@@ -1600,7 +1609,9 @@ local Guis = Window:MakeTab({
  Icon = "rbxassetid://12262151324",
  PremiumOnly = false
 })
-Guis:AddLabel("Qua ci sono le GUI")
+local Section = Guis:AddSection({
+	Name = "GUI utili per exploiting!"
+})
 Guis:AddButton({
  Name = "Fly Gui",
  Callback = function()
@@ -1627,6 +1638,9 @@ local Visualizzatore = Window:MakeTab({
  Icon = "rbxassetid://12392975271",
  PremiumOnly = false
 })
+local Section = Visualizzatore:AddSection({
+	Name = "Visualizer ufficiale di PistolaBollaHUB. (patchato)"
+})
 Visualizzatore:AddButton({
  Name = "PistolaBolla Visualizer",
  Callback = function()
@@ -1638,9 +1652,11 @@ local ScriptsBelli = Window:MakeTab({
  Icon = "rbxassetid://12268674045",
  PremiumOnly = false
 })
-ScriptsBelli:AddLabel("Altri script che potrebbero piacere")
+local Section = ScriptsBelli:AddSection({
+	Name = "Script utili per exploiting."
+})
 ScriptsBelli:AddButton({
- Name = "BackDoor",
+ Name = "BackDoor.exe (obsoleto)",
  Callback = function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
     ScriptEseguito()
@@ -1650,6 +1666,9 @@ local Giochi = Window:MakeTab({
  Name = "Giochi",
  Icon = "rbxassetid://12378205948",
  PremiumOnly = false
+})
+local Section = Giochi:AddSection({
+	Name = "Il PistolaBollaHUB è universale, però c'è anche per giochi specifici!"
 })
 Giochi:AddButton({
  Name = "Brookhaven",
@@ -1686,7 +1705,9 @@ local Tab2 = Window:MakeTab({
 	Icon = "rbxassetid://12260366457",
 	PremiumOnly = false
 })
-Tab2:AddLabel("Questi sono piu' degli script per le radio")
+local Section = Tab2:AddSection({
+	Name = "Grippos, ovvero Grip Position, Posizione Di Presa."
+})
 Tab2:AddButton({
 	Name = "BackPack (1-10 oggetti)",
 	Callback = function()
@@ -2261,7 +2282,9 @@ local Giocatore = Window:MakeTab({
  Icon = "rbxassetid://12318039078",
  PremuimOnly = false
 })
-Giocatore:AddLabel("ESP")
+local Section = Giocatore:AddSection({
+	Name = "ESP (patchato [Da fixare])"
+})
 Giocatore:AddColorpicker({
 	Name = "Colore Compagni",
 	Default = Color3.fromRGB(255, 0, 0),
@@ -2277,7 +2300,9 @@ Giocatore:AddToggle({
     AttivaESP()
     end
 })
-Giocatore:AddLabel("Altri Script")
+local Section = Giocatore:AddSection({
+	Name = "Frame animations (Roblox li ha patchati)"
+})
 Giocatore:AddButton({
  Name = "Hat Universe",
  Callback = function()
@@ -2605,8 +2630,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Gelatekussy/GelatekRe
 ScriptEseguito()
  end 
 })
-Giocatore:AddLabel("Velocita'/Salto")
-Giocatore:AddTextbox({
+local Section = Giocatore:AddSection({
+	Name = "Velocita'/Potenza di Salto."
+})Giocatore:AddTextbox({
 	Name = "Velocita'",
 	TextDisappear = true,
 	Callback = function(Value)
@@ -2620,6 +2646,9 @@ Giocatore:AddTextbox({
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
 	end    
 })
+local Section = Giocatore:AddSection({
+	Name = "Altro"
+})
 Giocatore:AddButton({
  Name = "Resettati",
  Callback = function()
@@ -2632,9 +2661,11 @@ local chat = Window:MakeTab({
  Icon = "rbxassetid://13813323955",
  PremiumOnly = false
 })
-chat:AddLabel("Script/Funzioni per la chat")
+local Section = chat:AddSection({
+	Name = "Funzioni/Script per la chat."
+})
 chat:AddButton({
- Name = "Fe esecutore chat",
+ Name = "Fe chat executor (patchato, Roblox ha cambiato meccannica della chat.)",
  Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/chat-executor/main/chat-executor",true))()
     end
@@ -2648,7 +2679,7 @@ chat:AddTextbox({
     end
 })
 chat:AddTextbox({
- Name = "Quante volte? (per il chat lagger)",
+ Name = "Quante volte? (per il chat lagger [patchato])",
  Default = "Numero",
  TextDisappear = true,
  Callback = function(num)
@@ -2680,13 +2711,13 @@ chat:AddTextbox({
 end
 })
 chat:AddButton({
- Name = "Manda messaggio",
+ Name = "Manda messaggio (patchato)",
  Callback = function()
     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(_G.ChatText,"All")
     end
 })
 chat:AddToggle({
- Name = "Spamma in chat",
+ Name = "Spamma in chat (patchato)",
  Default = false,
  Callback = function(Value)
     _G.SpammaChat = Value
@@ -2694,7 +2725,7 @@ chat:AddToggle({
     end
 })
 local Puntatori = Window:MakeTab({
- Name = "Puntatori belli",
+ Name = "Cursori",
  Icon = "rbxassetid://12362253675",
  PremiumOnly = false
 })
@@ -2712,15 +2743,18 @@ local HatRichiesti = Window:MakeTab({
  Icon = "rbxassetid://12362226698",
  PremiumOnly = false
 })
+local Section = HatRichiesti:AddSection({
+	Name = "Sempre Frame animations, ma richiedono accessori."
+})
 HatRichiesti:AddButton({
- Name = "Baller (R6)",
+ Name = "Baller (R6) [patchato]",
  Callback = function()
     loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Lowerrated/roblox-fe-baller-script/main/main"))()
     ScriptEseguito()
     end
 })
 HatRichiesti:AddButton({
- Name = "Baller V2 (R6)",
+ Name = "Baller V2 (R6) [patchato]",
  Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/BABAJI69BRUH/grippos/main/Baller-V2.lua"))()
     ScriptEseguito()
@@ -2738,7 +2772,9 @@ local ErreTix = Window:MakeTab({
  Icon = "rbxassetid://12609363352",
  PremiumOnly = false
 })
-ErreTix:AddLabel("Script per migliorare la grafica(piu' o meno)")
+local Section = ErreTix:AddSection({
+	Name = "Script per migliorare la grafica, più o meno."
+})
 ErreTix:AddButton({
  Name = "Attiva",
  Callback = function()
@@ -2839,7 +2875,9 @@ local Comandi = Window:MakeTab({
  Icon = "rbxassetid://12610162381",
  PremiumOnly = false
 })
-Comandi:AddLabel("Qua ci sono gli script per i comandi")
+local Section = Comandi:AddSection({
+	Name = "Script inerenti ai comandi."
+})
 Comandi:AddButton({
  Name = "Infinite Yield",
  Callback = function()
@@ -2848,7 +2886,7 @@ Comandi:AddButton({
     end
 })
 Comandi:AddButton({
- Name = "Annoying Admin",
+ Name = "Annoying Admin (patchato)",
  Callback = function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/TheMightySource/FE-Annoying-Admin/main/Main.lua'),true))()
     ScriptEseguito()
@@ -2859,7 +2897,9 @@ local CoseTest = Window:MakeTab({
  Icon = "rbxassetid://12318109479",
  PremiumOnly = false
 })
-CoseTest:AddLabel("Cose Test")
+local Section = CoseTest:AddSection({
+	Name = "Tutte le funzioni che uso per i test!"
+})
 CoseTest:AddParagraph("! ATTENZIONE !", "Prima di eseguire il Chat Bypass, usandolo potresti rischiare il ban di roblox, non sono responsabile per nessun ban. Usalo a tuo rischio.")
 CoseTest:AddButton({
  Name = "Bypassa Chat",
@@ -2932,7 +2972,9 @@ wait(_G.Velocita)
 end
 end
 
-CoseTest:AddLabel("Webhook Fucker")
+local Section = CoseTest:AddSection({
+	Name = "Webhook Fucker"
+})
 CoseTest:AddTextbox({
  Name = "Link webhook",
  Default = "",
@@ -2970,7 +3012,7 @@ local idbelli = Window:MakeTab({
  Icon = "rbxassetid://13401677277",
  PremiumOnly = false
 })
-idbelli:AddLabel("Musiche - Clicca per copiare")
+idbelli:AddParagraph("Musiche", "Clicca per copiare")
 idbelli:AddButton({
  Name = "Its Raining Tacos - 142376088",
  Callback = function()
@@ -3020,7 +3062,7 @@ idbelli:AddButton({
     IdCopiato()
     end
 })
-idbelli:AddLabel("Suoni - Clicca per copiare")
+idbelli:AddParagraph("Suoni/Meme", "Clicca per copiare")
 idbelli:AddButton({
  Name = "You Are An Idiot - 7266001792",
  Callback = function()
@@ -3126,7 +3168,7 @@ idbelli:AddButton({
     IdCopiato()
     end
 })
-idbelli:AddLabel("Suoni Fastidiosi - Clicca per copiare")
+idbelli:AddParagraph("Suoni Rumorosi", "Clicca per copiare")
 idbelli:AddButton({
  Name = "6846153394",
  Callback = function()
@@ -3174,8 +3216,7 @@ local Note = Window:MakeTab({
  Icon = "rbxassetid://12694233299",
  PremiumOnly = false
 })
-Note:AddParagraph("Nota:", "Alcuni script potrebbero non andare, se qualche script non va, scrivimi su Discord")
-Note:AddLabel("FCMM4TT10#3300")
+Note:AddParagraph("Aggiornamenti:", "20/06/2024\n\n[+]Aggiunto questo paragrafo                     [-] Rimossi Label inutili\n[+] Aggiunte le sezioni\n[+] Specificati gli script obsoleti\n[+] Specificati gli script patchati\n")
 local Crediti = Window:MakeTab({
  Name = "Crediti",
  Icon = "rbxassetid://12269282350",
