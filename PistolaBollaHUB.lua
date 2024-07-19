@@ -521,26 +521,56 @@ local Macchina = Window:MakeTab({
  PremiumOnly = false
 })
 
+_G.IdHoverboard = "string"
+
+function IdHoverboard()
+    local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = _G.IdHoverboard
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end
+
 _G.IdMacchina = "string"
 
 function IdMacchina()
-game:GetService("ReplicatedStorage").JK.TR["1NoMoto1rVehicle1s"]:FireServer("PickingScooterMusicText",_G.IdMacchina)
+    local args = {
+    [1] = "PickingCarMusicText",
+    [2] = _G.IdMacchina
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RE"):WaitForChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
 end
 
 Macchina:AddTextbox({
- Name = "ID Musica(devi avere il pass della musica)",
+ Name = "ID Musica(pass richiesto, hoverboard)",
  Default = "",
  TextDisappear = false,
  Callback = function(Value)
-    _G.IdMacchina = Value
+    _G.IdHoverboard = Value
  end
 })
 Macchina:AddButton({
- Name = "Starta musica",
+ Name = "Starta musica (Hoverboard)",
  Callback = function()
-    IdMacchina()
+    IdHoverboard()
     end
 })
+Macchina:AddTextbox({
+  Name = "ID Musica(pass richiesto, macchina)",
+  Default = "",
+  TextDisappear = false,
+  Callback = function(Value)
+    _G.IdHoverboard = Value
+  end
+)}
+Macchina:AddButton({
+  Name = "Starta musica (Macchina)",
+  Callback = function()
+    IdMacchina()
+  end
+)}
 local Ritorna = Window:MakeTab({
  Name = "Torna All'HUB",
  Icon = "rbxassetid://12378312397",
