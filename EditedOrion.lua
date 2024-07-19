@@ -471,7 +471,7 @@ function OrionLib:MakeWindow(WindowConfig)
 	local UIHidden = false
 
 	WindowConfig = WindowConfig or {}
-	WindowConfig.Name = WindowConfig.Name or string.format('PistolaBollaHUB <font color="#AD00FF">NEO</font>')
+	WindowConfig.Name = WindowConfig.Name or string.format('PistolaBollaHUB <font color="#FF0000">NEO</font>')
 	WindowConfig.ConfigFolder = WindowConfig.ConfigFolder or WindowConfig.Name
 	WindowConfig.SaveConfig = WindowConfig.SaveConfig or false
 	WindowConfig.HidePremium = WindowConfig.HidePremium or false
