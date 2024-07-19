@@ -563,13 +563,13 @@ Macchina:AddTextbox({
   TextDisappear = false,
   Callback = function(Value)
     _G.IdHoverboard = Value
-  end
+    end
 )}
 Macchina:AddButton({
   Name = "Starta musica (Macchina)",
   Callback = function()
     IdMacchina()
-  end
+    end
 )}
 local Ritorna = Window:MakeTab({
  Name = "Torna All'HUB",
