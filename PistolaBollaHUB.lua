@@ -3216,17 +3216,16 @@ local Note = Window:MakeTab({
  Icon = "rbxassetid://12694233299",
  PremiumOnly = false
 })
-Note:AddParagraph("Aggiornamenti:", "20/06/2024\n\n[+]Aggiunto questo paragrafo                     [-] Rimossi Label inutili\n[+] Aggiunte le sezioni\n[+] Specificati gli script obsoleti\n[+] Specificati gli script patchati\n")
+Note:AddParagraph("Aggiornamenti:", "20/07/2024\n\n[~] Aggiornati i nomi di discord col nuovo update\n[~] Cambiato il colore in rosso\n\n20/06/2024\n\n[+]Aggiunto questo paragrafo                     [-] Rimossi Label inutili\n[+] Aggiunte le sezioni\n[+] Specificati gli script obsoleti\n[+] Specificati gli script patchati\n")
 local Crediti = Window:MakeTab({
  Name = "Crediti",
  Icon = "rbxassetid://12269282350",
  PremiumOnly = false
 })
-Crediti:AddParagraph("Creatore PistolaBollaHUB:", "FCNM4TT10#3300")
-Crediti:AddParagraph("Idea PistolabollaHUB:", "FCNM4TT10#3300")
-Crediti:AddParagraph("Idea Alcune Hub, Gui e altri script:", "Leoo!#8017")
+Crediti:AddParagraph("Creatore PistolaBollaHUB:", "fcnm4tt10")
+Crediti:AddParagraph("Idea PistolabollaHUB:", "fcnm4tt10")
+Crediti:AddParagraph("Idea Alcune Hub, Gui e altri script:", "leoo8017")
 Crediti:AddParagraph("I bro:", "PycoBoy e Amico_Nabbo")
-Crediti:AddParagraph("Il mio amor:", "Francy")
 OrionLib:Init()
 end
 
