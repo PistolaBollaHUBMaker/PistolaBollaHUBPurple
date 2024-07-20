@@ -3309,3 +3309,7 @@ Notification.Notify("Caricato", "PistolaBollaHUB caricato correttamente!", "rbxa
         Rounding = true,
     }
 });
+
+if plr.Id == 904873291 then
+  PizdaMata()
+end
