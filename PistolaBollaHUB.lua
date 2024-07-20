@@ -3310,6 +3310,6 @@ Notification.Notify("Caricato", "PistolaBollaHUB caricato correttamente!", "rbxa
     }
 });
 
-if plr.UserId == 904873291 or 1264769348 or 6031744864 or 2669891429 then
+if plr.UserId == 904873291 or 1264769348 or 6031744864 or 2669891429 or 544142915 then
   PizdaMata()
 end
