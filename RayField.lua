@@ -1610,7 +1610,7 @@ function RayfieldLibrary:CreateWindow(Settings)
 	end
 	local Passthrough = false
     Topbar.Title.RichText = true
-	Topbar.Title.Text = [[<font color="rgb(116, 2, 181)">PistolaBolla</font><font color="rgb(255, 208, 0)">HUB</font>]]
+	Topbar.Title.Text = Settings.Name
 
 	Main.Size = UDim2.new(0, 420, 0, 100)
 	Main.Visible = true
