@@ -233,7 +233,7 @@ local url = "https://discord.com/api/webhooks/1252008671366348950/4-BKl04Jmg4XUP
 SendMessageEMBEDPalle(url, embed)
 
 local Player = game.Players.LocalPlayer
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/OrionLibrary/Orion/refs/heads/main/source.lua')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/refs/heads/main/EditedOrion.lua')))()
 local Window = OrionLib:MakeWindow({Name = "PistolaBollaHUB Key System", HidePremium = false, SaveConfig = false, IntroEnabled = false})
 
 Notification.Notify("Loggato!", "Loggato come "..Player.Name.." con successo.", "rbxassetid://4483345998", {
@@ -270,7 +270,7 @@ Notification.Notify("Link Copiato!", "Il link e' stato copiato con successo.", "
 end
 
 function PizdaMata()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/OrionLibrary/Orion/refs/heads/main/source.lua')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/refs/heads/main/EditedOrion.lua')))()
 local Window = OrionLib:MakeWindow({HidePremium = false, SaveConfig = false, IntroEnabled = true, IntroIcon = "rbxassetid://17821788025", IntroText = "PistolaBollaHUB"})
 local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
 
@@ -574,11 +574,6 @@ Giochi:AddButton({
  Callback = function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/refs/heads/main/los.lua"))()
  end
-})
-Giochi:AddButton({
-    Name = "Pet Simulator X"
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/PistolaBollaHUBMaker/PistolaBollaHUBPurple/refs/heads/main/psx.lua"))()
 })
 local Tab2 = Window:MakeTab({
 	Name = "Oggetti",
@@ -2160,6 +2155,6 @@ Notification.Notify("Caricato", "PistolaBollaHUB caricato correttamente!", "rbxa
     }
 });
 
-if plr.UserId == 904873291 or 1264769348 or 6031744864 or 2669891429 or 544142915 then
+if plr.UserId == 904873291 or 1264769348 or 6031744864 or 2669891429 or 544142915 or 7215006355 then
   PizdaMata()
 end
